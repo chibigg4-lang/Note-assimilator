@@ -1,1 +1,16 @@
-/.venv
+# Environments
+.env
+.venv/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Vector Databases
+vector_db/
+chroma_db/
+
+# MacOS (Just in case you share this)
+.DS_Store
