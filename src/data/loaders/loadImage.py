@@ -23,6 +23,6 @@ Rules:
 
 def extract_markdown_from_image(image_path: str) -> str:
     image = Image.open(image_path)
-    model = genai.GenerativeModel("gemini-2.5-flash")
+    model = genai.GenerativeModel("gemini-2.0-flash")
     response = model.generate_content([PROMPT, image])
     return response.text
